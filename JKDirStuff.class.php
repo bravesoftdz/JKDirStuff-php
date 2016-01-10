@@ -11,6 +11,11 @@ class JKDirStuff {
 	  			return false; //cannot go up a directory from nothing
 	  		}
 
+	  		if ($nwparts[count($nwparts)-1]=== ''){
+				//nothing there whcih means it was a / and we are trying to back up a directory but nowhere to go
+				return false; 
+			}
+
 
 	  		//print_r($nwparts);
 	  		//delete previous segment
@@ -29,7 +34,7 @@ class JKDirStuff {
 	  	}
 	  }
 
-	  
+
 	  return implode('/', $nwparts);
 	}
 
