@@ -2,7 +2,7 @@
 
 For example, give a path with some ../ in it and see if it correctly converts it to an absolute path
 ```
-Testing JKDirStuff::realpath
+Testing JKDirStuff::abspath
 
 1. PASS 'a/path/to/the/../../stuff' => 'a/path/stuff'
 2. PASS 'a/path/../this' => 'a/this'

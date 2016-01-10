@@ -1,6 +1,7 @@
 <?php
 /**
- *  For Christ Jesus came into this world to save sinners, of whom I am chief
+ *  For Christ Jesus came into this world to save sinners, of whom I am chief. -1Tim 1:15
+ *  If you need a function, go ahead and take it, no credit necessary.
  */
 class JKDirStuff {
 	public static function abspath($path){
