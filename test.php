@@ -3,7 +3,7 @@ require_once(__DIR__.'/JKDirStuff.class.php');
 
 
 
-echo "Testing JKDirStuff::realpath"."\n\n";
+echo "Testing JKDirStuff::abspath"."\n\n";
 
 $ary = array(
       'a/path/to/the/../../stuff' => 'a/path/stuff',
@@ -26,7 +26,7 @@ $fail_count = 0;
 
 $i = 0;
 foreach($ary as $test => $result){
-	$res = JKDirStuff::realpath($test);
+	$res = JKDirStuff::abspath($test);
 	$pass = $res === $result;
 	echo ++$i.'. '.($pass ? 'PASS' : 'FAIL, should be: "'.var_export($result, true).'"').' '.
 	     var_export($test, true).' => '.var_export($res, true)."\n";

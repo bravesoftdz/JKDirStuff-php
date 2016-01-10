@@ -1,7 +1,9 @@
 <?php
-
+/**
+ *  For Christ Jesus came into this world to save sinners, of whom I am chief
+ */
 class JKDirStuff {
-	public static function realpath($path){
+	public static function abspath($path){
 	  $parts = explode('/', $path);
 
 	  $nwparts = array();
