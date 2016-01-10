@@ -23,7 +23,7 @@ $fail_count = 0;
 foreach($ary as $test => $result){
 	$res = JKDirStuff::realpath($test);
 	$pass = $res === $result;
-	echo ($pass ? 'PASS' : 'FAIL, should be: "'.var_dump($result).'"').' '.$test.' => '.var_dump($res)."\n";
+	echo ($pass ? 'PASS' : 'FAIL, should be: "'.$result.'"').' '.$test.' => '.var_dump($res)."\n";
 	if ($pass){
 		$pass_count++;
 	}else{
